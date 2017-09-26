@@ -29,4 +29,17 @@ class Song
     artists_without_duplicates
   end
 
+  def self.genre_count
+    genre_histogram = {}
+    @@genres.each do |x|
+      if genre_histogram[x] == nil
+        genre_histogram[x] = 1
+      else
+        genre_histogram[x] += 1
+      end
+    end
+    genre_histogram
+  end
+  
+
 end
