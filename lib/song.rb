@@ -40,6 +40,6 @@ class Song
     end
     genre_histogram
   end
-  
+
 
 end
