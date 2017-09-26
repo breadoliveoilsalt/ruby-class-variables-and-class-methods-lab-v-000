@@ -17,7 +17,10 @@ class Song
     @@count
   end
 
-  
+  def self.genres
+    genres_without_duplicates = @@genres.uniq
+    genres_without_duplicates
+  end
 
 
 end
